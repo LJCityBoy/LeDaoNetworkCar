@@ -1,0 +1,2049 @@
+/*----s-----*/
+
+
+/*头部标题*/
+
+.nav {
+	background-color: #FFFFFF;
+}
+
+.nav h1 {
+	color: rgb(200, 22, 29);
+}
+
+
+/*----e-----*/
+
+
+/*----s-----*/
+
+
+/*黑块*/
+
+.main-head {
+	height: 120px;
+	width: 100%;
+	background-color: rgb(74, 76, 91);
+}
+
+.main-head div {
+	width: 50%;
+	margin-top: 15px;
+}
+
+.main-head span {
+	height: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size: 18px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.main-head-l {
+	font-size: 12px !important;
+	height: 15px !important;
+	line-height: 15px !important;
+}
+
+.main-head-white {
+	height: 80px;
+	width: 94%;
+	background-color: white;
+	position: absolute;
+	top: 120px;
+	left: 3%;
+	box-shadow: 0px 5px 5px 0px #C0C0C0;
+}
+
+.main-head-white div {
+	margin-top: 20px;
+}
+
+.main-head-white span {
+	height: 20px;
+	line-height: 20px;
+	color: gray;
+	font-size: 18px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+
+/*----e-----*/
+
+
+/*----s----头像----s----*/
+
+.head-usicon {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 90px;
+}
+
+.head-usicon img {
+	width: 70px;
+	height: 70px;
+}
+
+
+/*----e----头像----e----*/
+
+
+/*----s----注册----s----*/
+
+.registBt {
+	overflow: hidden;
+	position: relative;
+	margin-top: 60px;
+	height: 50px;
+	width: 100%;
+	border: 0;
+	background-color: rgb(200, 22, 29);
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+
+/*----e----注册----e----*/
+
+
+/*----s----点击接单----s----*/
+
+.jieDan {
+	position: absolute;
+	bottom: 10px;
+	height: 50px;
+	left: 3%;
+	width: 94%;
+	border: 0;
+	background-color: rgb(200, 22, 29);
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+
+/*----s----点击接单----s----*/
+
+
+/*----s----导航条----s----*/
+
+.nav-r {
+	color: gray;
+	font-size: 16px !important;
+	line-height: 30px;
+}
+
+.nav-l {
+	color: black !important;
+	font-size: 36px !important;
+	margin-top: -5px;
+}
+.nav-l-2{
+	color: white !important;
+	font-size: 36px !important;
+	margin-top: -5px;
+}
+.nav-r-set{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../image/32cn.png) no-repeat;
+	margin-top: 7px;
+	margin-right: 5px !important;
+}
+
+/*----e----导航条----e----*/
+
+
+/*----e----main列表----e----*/
+
+.main-listdiv {
+	position: absolute;
+	width: 94%;
+	margin-top: 40px;
+	margin-left: 3%;
+	overflow: auto;
+	bottom: 65px;
+	top: 170px;
+}
+
+.main-listdiv li {
+	height: 115px;
+	background-color: #FFFFFF;
+	margin: 5px auto;
+	box-shadow: 0px 5px 5px 0px #C0C0C0;
+}
+
+.main-listdiv-icon {
+	margin: 0px 5px;
+	width: 70px;
+	height: 100px;
+}
+
+.main-listdiv-icon img {
+	width: 60px;
+	height: 60px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.main-listdiv-icon span {
+	width: 100%;
+	font-size: 16px;
+	color: rgb(83, 83, 83);
+	text-align: center;
+}
+
+.main-listdiv-top {
+	width: 100%;
+}
+
+.main-listdiv-top p {
+	color: rgb(83, 83, 83);
+}
+
+.main-listdiv-top p span {
+	margin-right: 10px;
+	padding: 0 5px;
+	color: #FFFFFF;
+}
+
+.mui-icon-arrowright {
+	color: rgb(0, 193, 140);
+}
+
+.main-listdiv-bottom {
+	position: relative;
+	margin-top: 10px;
+}
+
+.main-listdiv-bottom p {
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: rgb(83, 83, 83);
+}
+
+.li-jiedan {
+	position: absolute;
+	right: 10px;
+	margin-top: 40px;
+	width: 98px;
+	height: 35px;
+	font-size: 18px;
+	border-color: rgb(200, 22, 29);
+	color: rgb(200, 22, 29);
+}
+
+
+/*----e----main列表----e----*/
+
+
+/*----s= 订单模式----*/
+
+.moshi {
+	position: absolute;
+	top: 44px;
+	bottom: 70px;
+	width: 100%;
+	/*height: 100%;*/
+	background: #FFFFFF;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+
+/*订单类型*/
+
+.moshi-typ {
+	text-align: center;
+	overflow: auto;
+	width: 100%;
+	height: 90px;
+	margin-top: 30px;
+}
+
+.moshi-p {
+	text-align: center;
+	color: rgb(83, 83, 83);
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.moshi-typ ul {
+	width: 270px;
+	margin: 10px auto;
+}
+
+.moshi-typ li {
+	float: left;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 5px;
+}
+
+.moshi-area {
+	width: 100%;
+	text-align: center;
+}
+
+.moshi-area div {
+	width: 270px;
+	margin: 0 auto;
+}
+
+.moshi-area select {
+	background: url("../image/down.png") no-repeat scroll right center transparent;
+	background-color: rgb(239, 241, 245);
+	width: 270px;
+	margin: 5px 0;
+}
+
+.moshi-time {
+	margin-top: 10px;
+}
+
+.moshi-time div {
+	width: 280px;
+	margin: 0px auto;
+}
+
+.moshi-time span {
+	color: rgb(83, 83, 83);
+	margin-left: 5px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.moshi-time input {
+	width: 125px;
+	font-size: 16px;
+	padding: 0;
+	margin: 5px 0;
+	text-align: center !important;
+}
+
+.saveBt {
+	position: absolute;
+	bottom: 10px;
+	left: 3%;
+	width: 94%;
+	height: 50px;
+	background-color: rgb(55, 57, 67);
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+
+/*----e= 订单模式----*/
+
+
+/*-----s 登录------*/
+
+.login {
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.login img {
+	width: 60px;
+	height: 110px;
+	margin: 10px 0;
+}
+
+.login h1 {
+	font-size: 22px;
+	margin: 10px 0;
+	color: rgb(83, 83, 83);
+}
+
+.login p {
+	color: rgb(83, 83, 83);
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.login input {
+	border-top: 0px;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0.1px;
+	margin: 40px 0 10px 0;
+	width: 85%;
+}
+
+.login-check {
+	width: 80%;
+	margin-left: 5%;
+}
+
+.login-check input {
+	border: 1px solid gray;
+	width: 20px;
+	height: 20px;
+	margin: 15px 0;
+	padding: 0;
+}
+
+.login-check a {
+	color: rgb(83, 83, 83);
+}
+
+.login-check a span {
+	color: rgb(0, 193, 140);
+}
+
+.login-nexbt {
+	position: absolute;
+	width: 85%;
+	height: 50px;
+	background-color: rgb(0, 193, 140);
+	color: #FFFFFF;
+	font-size: 18px;
+	border: 0;
+	border-radius: 25px;
+	bottom: 70px;
+	right: 7.5%;
+}
+
+.forgetpsw {
+	color: rgb(83, 83, 83);
+	margin-right: 8%;
+	padding: 0;
+}
+
+.login-yzm-bt {
+	width: 85%;
+	margin: 10px 7.5%;
+}
+
+.login-yzm-bt button {
+	color: rgb(83, 83, 83);
+	border: 0.6px solid gray;
+	width: 110px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 16px;
+}
+
+.login-pswdiv {
+	width: 85%;
+	margin-left: 7.5%;
+}
+
+.login-pswdiv input {
+	width: 100%;
+}
+
+.login-pswdiv i {
+	float: right;
+	position: relative;
+	right: 20px;
+	bottom: 40px;
+}
+
+
+/*-----e 登录------*/
+
+
+/*-------s = 注册申请------*/
+
+.application-select {
+	width: 280px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+#selectProvince,
+#selectCity {
+	background: url("../image/sanjiao1.png") no-repeat scroll right center transparent;
+	width: 135px;
+	height: 40px;
+	background-color: white;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.application-litop li {
+	width: 100%;
+	height: 50px;
+	/*line-height: 50px;*/
+	background-color: #FFFFFF;
+	border-bottom: 0.6px solid gray;
+}
+
+.application-litop li span {
+	width: 40%;
+	height: 40px;
+	line-height: 50px;
+	padding-left: 5px;
+}
+
+.application-litop li input {
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: right;
+	padding: 0 5px;
+	margin: 5px 0;
+}
+
+.selctCompn {
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: right;
+	padding: 0 15px;
+	margin: 5px 0;
+	direction: rtl;
+}
+
+
+/*-------e = 注册申请------*/
+
+
+/*-------s = 上传资料------*/
+
+.uploadData-div {
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	top: 55px;
+	bottom: 70px;
+}
+
+.uploadData-div li {
+	width: 100%;
+	height: 200px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.uploadData-div li p {
+	color: rgb(83, 83, 83);
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.uploadData-div li div {
+	/*background-color: green;*/
+	width: 46%;
+	height: 170px;
+	margin: 2px 5px;
+	text-align: center;
+}
+
+.uploadData-div li div img {
+	width: 100%;
+	height: 88%;
+}
+
+.man-che {
+	width: 98% !important;
+	margin: 2px 5px;
+	height: 170px;
+	text-align: center;
+}
+
+.man-che img {
+	width: 100%;
+	height: 88%;
+}
+
+.uploadData-div li span {
+	color: red;
+	font-size: 14px;
+}
+
+
+/*-------e = 上传资料------*/
+
+
+/*-------s = 上传进度------*/
+
+.about4 {
+	width: 100%px;
+	margin: 80px auto;
+}
+
+.about4_ch {
+	font-size: 18px;
+	color: #d80017;
+	margin-bottom: 30px;
+}
+
+.about4_main {
+	position: relative;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.line {
+	width: 1px;
+	height: 100%;
+	background-color: #999;
+	position: absolute;
+	left: 26px;
+	z-index: -1;
+}
+
+.about4_main ul li {
+	padding-left: 25px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 30px;
+	margin-bottom: 30px;
+	background: url(../image/about4_icon.png) left center no-repeat;
+}
+
+.about4_main-span {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 15px;
+	line-height: 15px;
+	padding-left: 15px;
+}
+
+.about4_main ul li:last-child {
+	margin-bottom: 0px;
+}
+
+
+/*-------e = 上传进度------*/
+
+html,
+body {
+	height: 100%;
+}
+
+
+/*-------s = 地图------*/
+
+#mamap {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	min-height: 480px;
+	max-height: 812px;
+	height: 100%;
+}
+
+
+/*-------e = 地图------*/
+
+
+/*-------s = 地图下的------*/
+
+.infor {
+	width: 96%;
+	height: 160px;
+	position: absolute;
+	left: 2%;
+	bottom: 2%;
+}
+
+.infor .infor-user {
+	width: 100%;
+	height: 90px;
+	background: white;
+}
+
+.infor .infor-user-icon {
+	width: 80px;
+	height: 90px;
+	text-align: center;
+}
+
+.infor .infor-user-icon s {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 5px 10px 0px 10px;
+	background: url(../image/08cn.png) no-repeat;
+}
+
+.infor .infor-user-icon p {
+	color: rgb(83, 83, 83);
+}
+
+.infor .infor-user-tel {
+	width: 80px;
+	height: 90px;
+}
+
+.infor .infor-user-message {
+	height: 90px;
+	max-width: 160px;
+	width: auto;
+	text-align: center;
+}
+
+.infor-user-message p {
+	height: 30px;
+	line-height: 30px;
+}
+
+.infor-user-message li {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.infor-user-message li i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	float: left;
+}
+
+.infor-user-message li p {
+	float: left;
+	color: rgb(83, 83, 83);
+}
+
+.infor .infor-bt {
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: rgb(199, 22, 29);
+}
+
+.infor-bt button {
+	border: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(199, 22, 29);
+	border-radius: 0;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.infor-user-tel {
+	text-align: center;
+}
+
+.infor-user-tel s {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 5px 10px 0px 10px;
+	background: url(../image/28cn.png) no-repeat;
+}
+
+
+/*-------e = 地图------*/
+
+
+/*-------s = 去导航------*/
+
+.topnav {
+	position: absolute;
+	top: 60px;
+	width: 96%;
+	height: 130px;
+	left: 2%;
+}
+
+.topnav-place {
+	width: 100%;
+	height: 90px;
+	background-color: rgb(74, 76, 91);
+}
+
+.topnav-place-l {
+	margin: 20px 10px;
+	max-width: 220px;
+	height: 50px;
+}
+
+.topnav-place-l p {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.topnav-place-l span {
+	color: gray;
+	font-size: 12px;
+}
+
+.topnav-tip {
+	height: 30px;
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+	color: rgb(83, 83, 83);
+	padding-left: 10px;
+	line-height: 30px;
+	border: 0.6px solid gainsboro;
+}
+
+.topnav-place-r {
+	width: 70px;
+	height: 90px;
+	text-align: center;
+}
+
+.topnav-place-r s {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../image/10cn.png);
+	margin-top: 15px;
+}
+
+.topnav-place-r p {
+	color: white;
+	font-size: 16px;
+}
+
+
+/*-------e = 去导航------*/
+
+
+/*-------s = 已到达乘客上车地------*/
+
+#topnav-tip2 {
+	position: absolute;
+	width: 96%;
+	height: 30px;
+	background-color: rgb(74, 76, 91);
+	line-height: 30px;
+	color: white;
+	font-size: 16px;
+	left: 2%;
+	top: 60px;
+	padding-left: 10px;
+}
+
+
+/*-------e = 已到达乘客上车地------*/
+
+#topnav-goto {
+	position: absolute;
+	top: 60px;
+	width: 96%;
+	left: 2%;
+	background-color: rgb(74, 76, 91);
+}
+
+
+/*----- s = 确认订单-----*/
+
+.top-line {
+	height: 10px;
+	width: 100%;
+}
+
+.sureOrder-price {
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.sureOrder-price span {
+	color: rgb(83, 83, 83);
+	font-size: 14px;
+}
+
+.sureOrder-price ul {
+	margin-top: 10px;
+}
+
+.sureOrder-price li {
+	width: 94%;
+	height: 50px;
+	margin-left: 3%;
+	background-color: rgb(243, 244, 245);
+	margin-top: 10px;
+}
+
+.sureOrder-price li p {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 5px;
+	font-size: 16px;
+	color: rgb(83, 83, 83);
+}
+
+.sureOrder-price li input {
+	border: none;
+	background-color: rgb(243, 244, 245);
+	height: 46px;
+	line-height: 46px;
+	width: 140px;
+	margin: 2px 0;
+	text-align: center;
+}
+
+#surePrice {
+	height: 45px;
+	line-height: 45px;
+	font-size: 20px;
+	color: rgb(199, 22, 29);
+	/*padding-top :18px;*/
+	font-weight: normal;
+	/*padding-bottom: 15px;*/
+}
+
+#sureOrder-top {
+	width: 100%;
+	height: 110px;
+	background-color: white;
+	text-align: center;
+}
+
+#sureOrder-top p {
+	height: 45px;
+	line-height: 45px;
+	color: rgb(83, 83, 83);
+	font-size: 18px;
+}
+
+#sureOrder-top div {
+	width: 230px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	border: 0.8px solid gray;
+}
+
+#sureOrder-top div span {
+	height: 50px;
+	line-height: 50px;
+	margin-right: 5px;
+	color: gray;
+}
+
+#sureOrder-top input {
+	width: 200px;
+	height: 40px;
+	margin-top: 5px;
+	border: none;
+}
+
+#right-xianjin,
+#right-tousu,
+#trip-xiangqing,
+#trip-tousu {
+	color: gray !important;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+
+/*----- e = 确认订单-----*/
+
+
+/*----- s = 行程结束-----*/
+
+#endTrip-waitPay,
+#endTrip-hadPay {
+	height: 160px;
+	background-color: white;
+	text-align: center;
+}
+
+.endTrip-title {
+	border: 0.9px solid gray;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 30px auto 10px auto;
+	display: inline-block;
+	color: gray;
+}
+
+#endTrip-waitPay p,
+#endTrip-hadPay p {
+	color: rgb(199, 22, 29);
+	font-size: 20px;
+}
+
+#endTrip-hadPay p {
+	color: gray !important;
+}
+
+#endTrip-waitPay span,
+#endTrip-hadPay span {
+	color: gray;
+	font-size: 14px;
+}
+
+.endTrip-bottom {
+	width: 96%;
+	background-color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 2%;
+}
+
+#endTrip-l {
+	width: 40%;
+	height: 40px;
+	border: none;
+	background-color: rgb(153, 153, 153);
+	border-radius: 0px;
+	color: white;
+	float: left;
+}
+
+#endTrip-r {
+	width: 58%;
+	height: 40px;
+	border: none;
+	background-color: rgb(199, 22, 29);
+	border-radius: 0px;
+	color: white;
+	float: right;
+}
+
+#endTrip-xianjin,
+#endTrip-xJie {
+	height: 160px;
+	background-color: white;
+	text-align: center;
+}
+
+#endTrip-xianjin p,
+#endTrip-xJie p {
+	color: black;
+	font-size: 18px;
+}
+
+#endTrip-queren {
+	width: 200px;
+	height: 35px;
+	border: none;
+	background-color: rgb(0, 193, 140);
+	color: white;
+	margin-top: 5px;
+}
+
+#endTrip-xJie span {
+	color: gray;
+	font-size: 14px;
+}
+
+
+/*----- e = 行程结束-----*/
+
+
+/*----- s = 行程投诉-----*/
+
+.complaint-top {
+	position: absolute;
+	width: 100%;
+	height: 115px;
+	top: 60px;
+	background-color: white;
+	padding: 0 10px;
+}
+
+.complaint-top p {
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.complaint-top li {
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	color: rgb(83, 83, 83);
+}
+
+.complaint-top-line {
+	position: absolute;
+	width: 7px;
+	height: 30px;
+	top: 59px;
+	border-right: 1px dashed gray;
+}
+
+.complaint-content {
+	position: absolute;
+	top: 185px;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+}
+
+.complaint-content span {
+	color: rgb(83, 83, 83);
+	font-size: 16px;
+}
+
+.complaint-content li {
+	width: 94%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 0.4px solid gray;
+	margin: 0 3%;
+	color: rgb(83, 83, 83);
+}
+
+.complaint-content li input {
+	border: 0.3px solid gray;
+	border-radius: 0px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+}
+
+.complaint-describe {
+	position: absolute;
+	width: 100%;
+	top: 395px;
+	height: 170px;
+	background-color: white;
+	padding: 5px 10px;
+	color: rgb(83, 83, 83);
+}
+
+.complaint-describe textarea {
+	display: inline-block;
+	margin-top: 5px;
+	height: 130px;
+}
+
+#complaint-tijiao {
+	position: absolute;
+	width: 96%;
+	height: 50px;
+	background-color: rgb(74, 76, 91);
+	left: 2%;
+	top: 650px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.complaint-top-2 {
+	/*position: absolute;*/
+	background-color: white;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.complaint-top-2 li {
+	height: 30px;
+}
+
+.complaint-content-2 {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.complaint-content-2 s {
+	display: inline-block;
+	width: 140px;
+	height: 137px;
+	margin-top: 15px;
+	background: url(../image/p-02.png);
+}
+
+
+/*----- e = 行程投诉-----*/
+
+
+/*----- s = 行程详情-----*/
+
+.tripDetail-message {
+	width: 96%;
+	height: 270px;
+	margin: 10px 2%;
+	padding: 10px;
+	background-color: white;
+}
+
+.tripDetail-message span {
+	color: rgb(83, 83, 83);
+}
+
+.tripDetail-message-top {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(243, 244, 245);
+	margin-top: 25px;
+	padding: 10px 5px;
+	border-bottom: 0.3px solid darkgray;
+}
+
+.tripDetail-message-top-icon {
+	width: 60px;
+	height: 60px;
+	background: url(../image/08cn.png) no-repeat;
+	margin-top: 10px;
+}
+
+.tripDetail-message-top-content {
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.tripDetail-message-top-content li {
+	height: 30px;
+	line-height: 30px;
+	width: 160px;
+	color: rgb(83, 83, 83);
+}
+
+.tripDetail-message-top-content li p {
+	border: 1px solid green;
+	padding: 0 5px 0 5px;
+	margin-right: 40px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 2px;
+	color: rgb(83, 83, 83);
+}
+
+.tripDetail-message-top-tel {
+	width: 90px;
+	height: 80px;
+	text-align: center;
+}
+
+.tripDetail-message-top-tel s {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: 0 10px;
+	background: url(../image/28cn.png);
+}
+
+.tripDetail-message-top-tel span {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.tripDetail-message-bottom {
+	height: 120px;
+	width: 100%;
+	background-color: rgb(243, 244, 245);
+	padding: 10px 5px;
+}
+
+.tripDetail-message-bottom ul {
+	margin-top: 5px;
+}
+
+.tripDetail-message-bottom ul li {
+	height: 50px;
+}
+
+.tripDetail-li-line {
+	height: 35px;
+	width: 6px;
+	float: left;
+	margin-top: 17px;
+	position: absolute;
+	border-right: 1px dashed gray;
+}
+
+.tripDetail-content {
+	width: 96%;
+	height: 60px;
+	margin-left: 2%;
+}
+
+.tripDetail-content button {
+	width: 49%;
+	height: 60px;
+	border: none;
+	border-radius: 0;
+}
+
+.tripDetail-bottom {
+	margin-top: 30px;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.tripDetail-bottom span {
+	color: rgb(83, 83, 83);
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.tripDetail-bottom button {
+	width: 100%;
+	height: 45px;
+	border: 0;
+	border-radius: 0;
+}
+
+
+/*----- e = 行程详情-----*/
+
+
+/*----- s = 取消订单-----*/
+
+.cancelOrder {
+	background-color: white;
+	position: absolute;
+	top: 55px;
+	width: 96%;
+	left: 2%;
+	height: 370px;
+}
+
+.cancelOrder .cancelOrder-top {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.cancelOrder .cancelOrder-top h1,
+span {
+	font-size: 18px;
+	font-weight: normal;
+	color: rgb(83, 83, 83);
+	height: 25px;
+	line-height: 25px;
+}
+
+.cancelOrder-conten {
+	width: 100%;
+	height: 240px;
+	padding: 0 10px;
+}
+
+.cancelOrder-conten li {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	border-bottom: 0.4px solid gray;
+	color: rgb(83, 83, 83);
+}
+
+.cancelOrder-conten li input {
+	height: 20px;
+	width: 20px;
+	border: 0.4px solid gray;
+	border-radius: 0;
+	margin-top: 10px;
+}
+
+.cancelOrder-foot button {
+	width: 100%;
+	height: 40px;
+	border: 0;
+	color: rgb(83, 83, 83);
+}
+
+.cancelOrder-bottom {
+	position: absolute;
+	bottom: 10px;
+	height: 50px;
+	width: 96%;
+	left: 2%;
+}
+
+.cancelOrder-bottom button {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(74, 76, 91);
+	border: none;
+	color: white;
+	font-size: 18px;
+}
+
+
+/*----- e = 取消订单-----*/
+
+
+/*----- s = 联系客服-----*/
+
+.customerService-content {
+	width: 96%;
+	height: 180px;
+	background-color: white;
+	margin: 10px auto;
+}
+
+.customerService-content ul {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.customerService-content li {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	border-bottom: 0.5px solid gray;
+}
+
+.customerService-content li s {
+	width: 30px;
+	height: 30px;
+	background: url(../image/right.png);
+	margin-top: 7px;
+}
+
+.customerService-foot {
+	height: 70px;
+	width: 100%;
+}
+
+.customerService-foot button {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	background-color: rgb(74, 76, 91);
+	border: none;
+	color: white;
+	font-size: 18px;
+}
+
+
+/*----- e = 联系客服-----*/
+
+/*----- s = 个人中心-----*/
+.usercenter-top{
+	width: 100%;
+	height: 160px;
+	background-color: rgb(74,76,91);
+	text-align: center;
+	display: inline-block;
+}
+.usercenter-top-icon{
+	width: 80px;
+	height: 100px;
+	margin: 10px auto;
+}
+.usercenter-top-icon-1{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: url(../image/ic_user.png) ;
+}
+.usercenter-top-icon-2{
+	display: inline-block;
+	width: 70px;
+	height: 28px;
+	background: url(../image/ic_rz_yes.png);
+}
+.usercenter-top-dan{
+	width: 90px;
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+.usercenter-top-dan span{
+	font-size: 14px;
+	display: block;
+	width: 90px;
+	color: gainsboro;
+}
+.usercenter-content{
+	position: absolute;
+	top: 170px;
+	background-color: white;
+	width: 96%;
+	height: 70px;
+	left: 2%;
+}
+.usercenter-content-l ,.usercenter-content-r,.usercenter-content2-r{
+	width: 50%;
+	height: 70px;
+	text-align: center;
+}
+.usercenter-content span {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	color: rgb(83,83,83);
+}
+.usercenter-content-l s {
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	margin-top: 8px;
+	background: url(../image/ic_wallet.png);
+}
+.usercenter-content-r s {
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	margin-top: 8px;
+	background: url(../image/ic_register.png);
+}
+.usercenter-content2-r s {
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	margin-top: 8px;
+	background: url(../image/ic_notice.png);
+}
+
+.usercenter-bottom {
+	position: absolute;
+	top: 250px;
+	width: 96%;
+	margin-left: 2%;
+}
+.usercenter-bottom li{
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: white;
+}
+.usercenter-bottom-li-l{
+	width: 80px;
+	height: 90px;
+	text-align: center;
+	color: rgb(83,83,83);
+	font-size: 16px;
+}
+.usercenter-bottom-li-l s{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../image/08cn.png);
+	margin: 10px 10px 0 10px;
+}
+.usercenter-bottom-li-c{
+	height: 100px;
+	max-width: 180px;
+	margin-left: 5px;
+}
+.usercenter-bottom-li-c span{
+	display: block;
+	color: rgb(83,83,83);
+	font-size: 16px;
+	margin-top: 10px;
+}
+.usercenter-bottom-li-c p{
+	height: 30px;
+	line-height: 30px;
+}
+.usercenter-bottom-li-r{
+	height: 100px;
+	width: 80px;
+	text-align: center;
+}
+.usercenter-bottom-li-r-top
+{
+	display: block;
+	margin-top: 10px;
+	color: green;
+}
+.usercenter-bottom-li-r-ttom
+{
+	display: block;
+	margin-top: 30px;
+}
+/*----- e = 个人中心-----*/
+
+/*----- s = 钱包-----*/
+.wallet-top{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	height: 150px;
+	background-color: rgb(74,76,91);
+	padding: 10px 10px;
+}
+.wallet-top span{
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	font-size: 18px;
+	color: white;
+}
+.wallet-top h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
+}
+.wallet-cent{
+	width: 96%;
+	height: 60px;
+	line-height: 60px;
+	background-color: white;
+	position: absolute;
+	top: 170px;
+	left: 2%;
+	padding: 0 10px;
+	color: rgb(83,83,83);
+	
+}
+.wallet-cent s{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../image/right.png);
+	margin-top: 15px;
+}
+
+.wallet-bottom{
+	position: absolute;
+	top: 240px;
+	width: 96%;
+	left: 2%;
+	background-color: white;
+	padding: 0 10px;
+}
+.wallet-bottom li{
+	height: 50px;
+	line-height: 50px;
+	color: rgb(83,83,83);
+}
+.wallet-bottom .wallet-bottom-li-div {
+	height: 50px;
+	width: 120px;
+}
+.wallet-bottom-li-div  p{
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: rgb(83,83,83);
+}
+.wallet-bottom-li-div  span{
+	display: block;
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+}
+.wallet-bottom li button{
+	height: 46px;
+	width: 100%;
+	margin-top: 2px;
+	border: 0;
+	border-radius: 0;
+	color: rgb(83,83,83);
+}
+/*----- e = 钱包-----*/
+
+/*----- s = 消息中心-----*/
+
+.messageCenter-b{
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+.messageCenter-b li
+{
+	/*display: inline-block;*/
+	width: 100%;
+	height: 100px;
+	padding: 10px 10px;
+	color: gray;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background-color: white;
+}
+.messageCenter-b li span{
+	margin-right: 10px;
+}
+.messageCenter-b li div{
+	height: 100px;
+	overflow: hidden;
+}
+/*----- e = 消息中心-----*/
+
+/*----- s = 个人信息-----*/
+.personal-box{
+	margin-top: 10px;
+}
+.personal-box li{
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	border-bottom: 0.4px solid gray;
+	padding: 0px 10px;
+}
+.personal-box li p{
+	float: left;
+	width: 170px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 50px;
+}
+.personal-box li span{
+	float: left;
+	display: block;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+}
+.personal-box-icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../image/ic_user-2.png);
+	margin: 5px 5px 5px 0;
+	
+}
+.personal-box-r {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../image/right.png);
+	margin: 5px 0px 5px 0;
+}
+/*----- e = 个人信息-----*/
+
+
+/*----- s = 设置-----*/
+
+.set-ul
+{
+	margin-top: 10px;
+}
+.set-ul li{
+	height: 50px;
+	line-height: 50px;
+	color: rgb(83,83,83);
+	font-size: 18px;
+	background-color: white;
+	padding: 0 10px;
+	
+}
+.set-ul .set-l{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	margin: 9px 10px 9px 0px;
+}
+.set-ul .set-r{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	margin: 9px 0px 9px 0px;
+	background:url(../image/right.png);
+}
+.set-line-b{
+	border-bottom: 0.4px solid gray;
+}
+.set-mar-b{
+	margin-bottom: 10px;
+}
+/*----- e = 设置-----*/
+
+/*----- s = 意见反馈-----*/
+.feedback-top textarea{
+	width: 96%;
+	height: 160px;
+	margin-left: 2%;
+	margin-top: 10px;
+	background-color: white;
+	border: 0;
+	border-radius: 0;
+}
+.feedback-top button{
+	width: 96%;
+	height: 50px;
+	left: 2%;
+	margin-top: 20px;
+	color: white;
+	border: 0;
+	border-radius: 0;
+	background-color: rgb(192,192,192);
+}
+
+/*----- e = 意见反馈-----*/
+
+/*----- s = 联系我们-----*/
+.contactUs-ul{
+	margin-top: 10px;
+}
+.contactUs-ul li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	padding: 0px 10px;
+}
+.contactUs-ul li s{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	background: url(../image/right.png);
+}
+.contactUs-ul li a{
+	display: block;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	color: rgb(0,193,140);
+	max-width: 240px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}
+
+/*----- e = 联系我们-----*/
+
+/*----- s = 关于-----*/
+.aboutmet-ul {
+	margin-top: 10px;
+}
+.aboutmet-ul li{
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	padding: 0px 10px;
+}
+.aboutmet-ul li s{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	background: url(../image/right.png);
+}
+
+/*----- e = 关于-----*/
+
+/*----- s = 分享-----*/
+.share-top{
+	width: 100%;
+	height: 10px;
+	background-color: rgb(242,243,244);
+}
+.share-center {
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+.share-center img{
+	height: 290px;
+	width: 290px;
+	margin-top: 20px;
+}
+/*----- e = 分享-----*/
+
+/*----- s = 行程详情-----*/
+.routeDetails-top{
+	position: absolute;
+	top: 55px;
+	left: 2%;
+	height: 280px;
+	width: 96%;
+	padding: 10px 10px;
+	background-color: white;
+}
+.routeDetails-top span{
+	font-size: 16px;
+}
+.routeDetails-top-t {
+	width: 100%;
+	height: 90px;
+	margin-top: 30px;
+	background-color: rgb(243,244,245);
+}
+.routeDetails-top-t-icon {
+	width: 80px;
+	height: 90px;
+	margin-top: 5px;
+	text-align: center;
+}
+.routeDetails-top-t-icon s{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+	background: url(../image/08cn.png) no-repeat;
+}
+.routeDetails-top-t-c{
+	max-width: 160px;
+	height: 90px;
+}
+.routeDetails-top-t-c p
+{
+	height: 40px;
+	line-height: 40px;
+	color: rgb(83,83,83);
+	font-size: 16px;
+	margin-top: 5px;
+}
+.routeDetails-top-t-c p span{
+	border: 1px solid gray;
+	background: white;
+	margin-left: 5px;
+}
+.routeDetails-top-t-r{
+	height: 90px;
+	width: 80px;
+	color: rgb(83,83,83);
+	text-align: center;
+}
+.routeDetails-top-t-r s{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../image/28cn.png);
+	margin-top: 5px;
+}
+.routeDetails-top-b{
+	width: 100%;
+	height: 130px;
+	background-color: rgb(243,244,245);
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 0px 10px;
+}
+.routeDetails-top-b span{
+	height: 30px;
+	line-height: 30px;
+}
+.routeDetails-top-b-bo{
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+}
+.routeDetails-top-b-bo p{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: rgb(83,83,83);
+}
+.rout-line{
+	width: 4px;
+	height: 43px;
+	border-right: 1px dashed gray;
+	position: absolute;
+	left: 22px;
+	top: 190px;
+}
+
+.routeDetails-bottom{
+	height: 120px;
+	width: 96%;
+	background-color: white;
+	position: absolute;
+	top: 335px;
+	left: 2%;
+	padding: 0px 10px;
+}
+.routeDetails-bottom span{
+	font-size: 16px;
+	padding: 0px 10px;
+}
+.routeDetails-bottom-c {
+	width: 100%;
+	height: 80px;
+	background-color: rgb(243,244,245);
+	margin-top: 30px;
+}
+.routeDetails-bottom-c p{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: rgb(83,83,83);
+	padding: 0px 10px;
+}
+.routeDetails-bottom-c p span{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: rgb(83,83,83);
+}
+/*----- e = 行程详情-----*/
+
+/*----- s = 申诉中心-----*/
+.appealCente-top{
+	width: 96%;
+	height: 90px;
+	margin: 10px auto;
+	background-color: white;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: rgb(83,83,83);
+}
+.appealCente-top div{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgb(243,244,245);
+	padding: 0px 10px;
+}
+.appealCente-top div s{
+	float: right;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	background: url(../image/right.png);
+}
+.appealCente-bottom{
+	width: 96%;
+	height: 130px;
+	background-color: white;
+	margin-left: 2%;
+	margin-top: 10px;
+	padding: 5px 10px;
+	color: rgb(83,83,83);
+}
+.appealCente-bottom-b {
+	width: 100%;
+	height: 100px;
+}
+.appealCente-bottom-l,.appealCente-bottom-r{
+	width: 90px;
+	height: 80px;
+	border: 0.6px solid gray;
+	border-radius: 3px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 16px;
+	color: rgb(83,83,83);
+}
+.appealCente-bottom-l s{
+	display: inline-block;
+	width: 35px;
+	height: 45px;
+	background: url(../image/12cn.png);
+	margin: 5px 22.5px 0px 22.5px;
+	
+}
+.appealCente-bottom-r s{
+	display: inline-block;
+	width: 45px;
+	height: 36px;
+	background: url(../image/13cn.png);
+	margin: 10px 17.5px 5px 17.5px;
+}
+/*----- e = 申诉中心-----*/

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body style="background-color: #FFFFFF;">
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">行程结束</h1>
+			<a class=" mui-icon  mui-pull-right" id="right-tousu">投诉</a>
+		</header>
+		<div class="mui-content">
+			<div class="top-line"></div>
+			<!--线上待支付-->
+			<div id="endTrip-waitPay">
+				<h2 class="endTrip-title">待支付</h2>
+				<p>28.88元</p>
+				<span>2018-03-13 14:38</span>
+			</div>
+			<!--线上已支付-->
+			<div id="endTrip-hadPay">
+				<h2 class="endTrip-title">已支付</h2>
+				<p>28.88元</p>
+				<span>2018-03-13 14:38</span>
+			</div>
+			<!--现金待支付-->
+			<div id="endTrip-xianjin">
+				<h2 class="endTrip-title">待支付</h2>
+				<p>现金结账</p>
+				<button id="endTrip-queren">确认收款</button>
+			</div>
+			<!--现金已支付-->
+			<div id="endTrip-xJie">
+				<h2 class="endTrip-title">已支付</h2>
+				<p>现金结账</p>
+				<span>2018-03-13 14:38</span>
+			</div>
+
+			<div class="endTrip-bottom">
+				<button id="endTrip-l">停止接单</button>
+				<button id="endTrip-r">继续接单</button>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			mui.init()
+			$("#endTrip-hadPay").hide(); //隐藏
+			$("#endTrip-xianjin").hide();
+			$("#endTrip-xJie").hide();
+			//投诉
+			$("#right-tousu").click(function() {
+				openNewWindow("../XingCheng/complaints.html","complaints",{});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册申请</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>-->
+		<script type="text/javascript" src="../js/myjsfile.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">注册申请</h1>
+		</header>
+		<div class="mui-content">
+			<div class="application-select">
+				<select name="city" id="selectProvince" onchange="change()" class="fl">
+					<option selected value="12">选择省份</option>
+				</select>
+				<select name="city" id="selectCity" class="fr">
+					<option selected value="34">选择城市</option>
+				</select>
+			</div>
+			<!--网约车界面-->
+			<div class="application-litop" id="application-netCar">
+				<ul>
+					<li>
+						<span class="fl">驾驶员信息</span>
+					</li>
+					<li>
+						<span class="fl">司机姓名</span>
+						<input type="text" placeholder="请输入司机姓名" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">身份证号</span>
+						<input type="text" placeholder="请输入司机身份证号" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">资格证号</span>
+						<input type="text" placeholder="请输司机资格证号" class="fr"/>
+					</li>
+					<li style="margin-top: 10px;">
+						<span class="fl">车辆信息</span>
+					</li>
+					<li>
+						<span class="fl">车牌号</span>
+						<input type="text" placeholder="请输入车牌号码" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">身份证号</span>
+						<input type="text" placeholder="请输入车辆所有人身份证号" class="fr"/>
+					</li>
+				</ul>
+			</div>
+			<!--出租车界面-->
+			<div class="application-litop" id="application-textCar">
+				<ul>
+					<li>
+						<span class="fl">基本信息</span>
+					</li>
+					<li>
+						<span class="fl">出租车公司</span>
+						<select name="选择公司" class="selctCompn fr">
+							<option value="">请选择</option>
+							<option value="">佛铁公司</option>
+							<option value="">新协力公司</option>
+							<option value="">中开智能信息有限公司</option>
+							
+						</select>
+					</li>
+					<li>
+						<span class="fl">车牌号码</span>
+						<input type="text" placeholder="请输入车牌号码号" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">车辆所有人</span>
+					</li>
+					<li >
+						<span class="fl">车辆注册时间</span>
+					</li>
+					<li style="margin-top: 10px;">
+						<span class="fl" >个人信息</span>
+					</li>
+					<li>
+						<span class="fl">姓名</span>
+						<input type="text" placeholder="请输入司机姓名" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">身份证号</span>
+						<input type="text" placeholder="请输入车辆所有人身份证号" class="fr"/>
+					</li>
+					<li>
+						<span class="fl">初次领取驾照日期</span>
+					</li>
+				</ul>
+			</div>
+			<button class="saveBt" id="aplicatinSaveBt">保存</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+		    //读取上个页面传递的数据
+		    var puType;
+			mui.plusReady(function(){
+			var obj = plus.webview.currentWebview();
+			puType = obj.pageType;
+			 if (obj.pageType == "typ1") {
+			 	$("#application-netCar").show();
+			 	$("#application-textCar").hide();
+			 }else{
+			 	$("#application-netCar").hide();
+			 	$("#application-textCar").show();
+			 }
+			 
+		});
+		//省份数据获取
+			var programme_sel = [];
+			for(var i = 0; i < window.dataJson.length; i++) {
+				var data = window.dataJson[i];
+				programme_sel.push('<option value="' + data.value + '">' + data.name + '</option>');
+			}
+			$("#selectProvince").html(programme_sel.join(' '));
+//			选择省份触发事件
+			function change() {
+				var programme_sel2 = [];
+				for(var i = 0; i < window.dataJson2.length; i++) {
+					if(window.dataJson2[i].parentId == $("#selectProvince").val()) {
+						var val = window.dataJson2[i];
+						programme_sel2.push('<option value="' + val.value + '">' + val.name + '</option>');
+					}
+				}
+				$("#selectCity").html(programme_sel2.join(' '));
+			}
+//			保存按钮事件
+			$("#aplicatinSaveBt").click(function(){
+				mui.openWindow({
+					url : "../pushs/uploadData.html",
+					id : 'uploadData',
+					extras : {
+						pageType : puType
+					},
+				});
+			});
+//			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">接单</h1>
+			<a class=" mui-icon  mui-pull-right" id="trip-xiangqing">行程详情</a>
+		</header>
+		<div class="mui-content">
+			<div id="mamap">地图加载中...</div>
+			<div class="infor">
+				<div class="infor-user">
+					<div class="infor-user-icon fl">
+						<s></s>
+						<p>用户昵称</p>
+					</div>
+					<div class="infor-user-message fl">
+						<ul>
+							<p>今日18：00-18：15</p>
+							<li>
+								<i class="iconfont icon-point color-gr"></i>
+								<p>南方消防电力大厦</p>
+							</li>
+							<li>
+								<i class="iconfont icon-point color-r"></i>
+								<p>南方消防电力大厦</p>
+							</li>
+						</ul>
+					</div>
+					<div class="infor-user-tel fr" id="callRider">
+						<s></s>
+						<p>乘客电话</p>
+					</div>
+				</div>
+				<div class="infor-bt">
+					<button id="jiedan">接单</button>
+				</div>
+			</div>
+			<div class="topnav" id="top-nav">
+				<div class="topnav-place">
+					<div class="topnav-place-l fl">
+						<p>去南方消防电力大厦</p>
+						<span>全程12.6km 预计21分钟</span>
+					</div>
+					<div class="topnav-place-r fr">
+						<s></s>
+						<p>导航</p>
+					</div>
+				</div>
+				<div class="topnav-tip">
+					请尽快到达乘客上车点
+				</div>
+			</div>
+			<div id="topnav-tip2">
+				已到达乘客上车地点，请耐心等待乘客上车
+			</div>
+
+			<div id="topnav-goto">
+				<div class="topnav-place">
+					<div class="topnav-place-l fl">
+						<p>去南方消防电力大厦</p>
+						<span>全程12.6km 预计21分钟</span>
+					</div>
+					<div class="topnav-place-r fr">
+						<s></s>
+						<p>导航</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=8745fc15e08c58536395b327ce909827"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			_steps = 1;
+			$("#top-nav").hide();
+			$("#topnav-tip2").hide();
+			$("#topnav-goto").hide();
+			$("#trip-xiangqing").hide();
+
+			function initMap() {
+				//				var amap = plus.maps.Map("mamap");
+				var amap = new AMap.Map("mamap", {
+
+					resizeEnable: true, //缩放显示
+
+					zoom: 10 //地图显示的缩放级别
+
+				});
+
+			}
+			initMap();
+
+			$("#jiedan").click(function() {
+				switch(_steps) {
+					case 1:
+						{
+							$("#top-nav").show();
+							$("#trip-xiangqing").show();
+							$("#jiedan").text("到达上车地点");
+							$("#dan-title").text("去接乘客");
+							_steps = 2;
+						}
+						break;
+					case 2:
+						{
+							$("#top-nav").hide();
+							$("#topnav-tip2").show();
+							$("#jiedan").text("接到乘客");
+							$("#dan-title").text("等待乘客");
+							_steps = 3;
+						}
+						break;
+					case 3:
+						{
+							$("#topnav-tip2").hide();
+							$("#topnav-goto").show();
+							$("#jiedan").text("到达目的地");
+							$("#dan-title").text("去往目的地");
+							_steps = 4;
+						}
+						break;
+					case 4:
+						{
+							$("#topnav-goto").hide();
+							openNewWindow("../XingCheng/sureOrder.html", 'sureOrder', {});
+
+						}
+						break;
+
+					default:
+						break;
+				}
+
+			});
+			//行程详情
+			$("#trip-xiangqing").click(function() {
+
+				openNewWindow("../XingCheng/tripDetails.html", "tripDetails", {});
+			});
+			//打电话给乘客
+			$("#callRider").click(function() {
+				plus.device.dial(13516645183, false);
+			});
+		</script>
+	</body>
+
+</html>

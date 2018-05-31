@@ -1,0 +1,34 @@
+{
+  "XingCheng/jieDan.html": {
+    "href": "XingCheng/jieDan.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/iconfont.css",
+      "css/main.css",
+      "css/myInitialize.css",
+      "css/public.css",
+      "js/jquery.min.js",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "XingCheng/tripDetails.html"
+    ],
+    "priority": 0
+  },
+  "XingCheng/tripDetails.html": {
+    "refer": [
+      "XingCheng/cancelOrder.html"
+    ],
+    "resources": []
+  },
+  "pushs/registerClass.html": {
+    "refer": [
+      "pushs/applicationForRegiste.html"
+    ]
+  },
+  "pushs/applicationForRegiste.html": {
+    "refer": [
+      "pushs/uploadData.html"
+    ]
+  }
+}

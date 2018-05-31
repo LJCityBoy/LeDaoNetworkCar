@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">设置</h1>
+			<!--<a class=" mui-icon  mui-pull-right" id="trip-xiangqing">行程详情</a>-->
+		</header>
+		<div class="mui-content">
+		    <ul class="set-ul">
+		    	<li class="set-mar-b">
+		    		<s class="fl set-l " style="background: url(../image/22cn.png)no-repeat;"></s>
+		    		修改密码
+		    		<s class="fr set-r"></s>
+		    	</li>
+		    	<li class="set-mar-b">
+		    		<s class="fl set-l" style="background: url(../image/23cn.png) no-repeat;"></s>
+		    		离线地图下载
+		    		<s class="fr set-r"></s>
+		    	</li>
+		    	<li class="set-line-b">
+		    		<s class="fl set-l" style="background: url(../image/19cn.png)no-repeat;"></s>
+		    		意见反馈
+		    		<s class="fr set-r" ></s>
+		    	</li>
+		    	<li class="set-line-b">
+		    		<s class="fl set-l" style="background: url(../image/20cn.png)no-repeat;"></s>
+		    		联系我们
+		    		<s class="fr set-r"></s>
+		    	</li>
+		    	<li class="set-mar-b">
+		    		<s class="fl set-l" style="background: url(../image/24cn.png)no-repeat;"></s>
+		    		关于
+		    		<s class="fr set-r"></s>
+		    	</li>
+		    	<li>
+		    		<s class="fl set-l" style="background: url(../image/25cn.png)no-repeat;"></s>
+		    		分享
+		    		<s class="fr set-r"></s>
+		    	</li>
+		    </ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			$('ul li').click(function(){
+				switch ($(this).index()){
+					case 0:
+					{
+						//修改密码
+						
+					}
+						break;
+						case 1:
+					{
+						//离线地图
+						mui.toast("离线地图功能暂未开放");
+					}
+						break;
+						case 2:
+					{
+						//意见反馈
+						openNewWindow("../personalCenter/feedback.html","feedback",{});
+					}
+						break;
+						case 3:
+					{
+						//联系我们
+						openNewWindow("../personalCenter/contactUs.html","contactUs",{});
+					}
+						break;
+						case 4:
+					{
+						//关于
+						openNewWindow("../personalCenter/aboutMe.html","aboutMe",{});
+					}
+						break;
+						case 5:
+					{
+						//分享
+						openNewWindow("../personalCenter/share.html","share",{});
+					}
+						break;
+					default:
+						break;
+				}
+			});
+		</script>
+	</body>
+
+</html>

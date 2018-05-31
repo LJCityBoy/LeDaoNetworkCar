@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>行程详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">行程详情</h1>
+			<a class=" mui-icon  mui-pull-right" id="trip-xiangqing">投诉</a>
+		</header>
+		<div class="mui-content">
+		    <div class="routeDetails-top">
+		    	<span class="fl">本次订单 20180316</span>
+		    	<span class="fr">2018-02-16 09:21</span>
+		    	<div class="routeDetails-top-t">
+		    		<div class="routeDetails-top-t-icon fl">
+		    			<s></s>
+		    		</div>
+		    		<div class="routeDetails-top-t-c fl">
+		    			<p>用户昵称 <span>app</span></p>
+		    			<p>刘大哥</p>
+		    		</div>
+		    		<div class="routeDetails-top-t-r fr">
+		    			<s></s>
+		    			乘客电话
+		    		</div>
+		    	</div>
+		    	<div class="routeDetails-top-b">
+		    		<span class="fl">2018-03-16 周五 10:23</span>
+		    		<span class="fr">已完成</span>
+		    		<div class="routeDetails-top-b-bo">
+		    			<div class="rout-line"></div>
+		    			<p><i class="iconfont icon-point color-gr"></i>南方消防电力大厦</p>
+		    			<p style="margin-top: 27px !important;"><i class="iconfont icon-point color-r"></i>佛山火车站</p>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		    <div class="routeDetails-bottom" id="routeDetails">
+		    	<span class="fl">支付</span>
+		    	<span class="fr">2018-03-16 11:05</span>
+		    	<div class="routeDetails-bottom-c">
+		    		<p>支付方式<span class="fr">支付宝</span></p>
+		    		<p>支付金额<span class="fr">88.8元</span></p>
+		    	</div>
+		    </div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			mui.plusReady(function() {
+				var self = plus.webview.currentWebview();
+			});
+		</script>
+	</body>
+
+</html>

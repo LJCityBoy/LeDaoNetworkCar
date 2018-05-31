@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body style="background-color: #FFFFFF;">
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">确认订单</h1>
+			<a class=" mui-icon  mui-pull-right" id="right-xianjin">现金结账</a>
+		</header>
+		<div class="mui-content">
+			<div class="top-line"></div>
+			<div id="sureOrder-top">
+				<p>请按计价器显示的金额输入</p>
+				<div>
+					<span class="fr">元</span>
+					<input type="number" id="jijiaqi" placeholder="请输入金额" class="fl" />
+				</div>
+
+			</div>
+			<div class="sureOrder-price">
+				<h1 id="surePrice">28.88元</h1>
+				<span>若行程中产生附加费，请添加</span>
+				<ul>
+					<li>
+						<p class="fl">过路费</p>
+						<p class="fr">元</p>
+						<input type="number" class="fr" id="guoLuFei" placeholder="请输入金额" onchange="inputOnchange()" />
+					</li>
+					<li>
+						<p class="fl">停车费</p>
+						<p class="fr">元</p>
+						<input type="number" class="fr" id="tingCheFei" placeholder="请输入金额" onchange="inputOnchange()" />
+					</li>
+				</ul>
+			</div>
+			<button class="jieDan" id="ariveBt">到达目的地</button>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			$("#sureOrder-top").hide();
+			$("#right-Bt").hide();
+			var tcf = 0; //输入金额
+			var glf = 0; //输入金额
+			var money = 0;
+			var fy = parseFloat($("#surePrice").text()); //最初金额
+			//计算总金额
+			function inputOnchange() {
+				var tcf = $("#tingCheFei").val();
+				var glf = $("#guoLuFei").val();
+				tcf = tcf > 0 ? tcf : 0;
+				glf = glf > 0 ? glf : 0;
+				var money = parseFloat(tcf) + parseFloat(glf) + fy
+				$("#surePrice").html(money.toFixed(2) + "元");
+			}
+			//点击到达目的地----发起收款
+			$("#ariveBt").click(function() {
+				$("#sureOrder-top").show();
+				$("#right-Bt").show();
+				$("#ariveBt").html("发起收款");
+			});
+			//现金收款
+			$("#right-xianjin").click(function() {
+				mui.openWindow({
+					url: "../XingCheng/endTrip.html",
+					id: "endTrip",
+					extras: {
+						"money": money
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>

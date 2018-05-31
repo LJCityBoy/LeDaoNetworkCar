@@ -1,0 +1,33 @@
+/*浮动*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.b-green{
+	background-color: rgb(0,193,140);
+}
+.b-gray{
+	background-color: rgb(74,76,91);
+}
+.b-border{
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: rgb(83,83,83);
+}
+.color-r{
+	color: rgb(200,22,29) !important;
+}
+.color-w{
+	color: #FFFFFF;
+}
+.color-g{
+	color: rgb(83,83,83) !important;
+}
+.color-gr{
+	color: rgb(0,193,140);
+}
+.icon-point{
+	margin-right: 10px;
+}

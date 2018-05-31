@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+	</head>
+
+	<body style="background-color: white;">
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<!--<h1 class="mui-title"></h1>-->
+		</header>
+		<div class="mui-content">
+			<div class="login">
+				<img src="../image/ic_login_phone.png" />
+				<h1>请输入手机号</h1>
+				<p>为方便司机联系你，请输入手机号</p>
+				<input type="tel" placeholder="请输入手机号" id="phonenumber" />
+				<div class="login-check">
+					<input type="checkbox" />
+					<a href="#"><span>同意</span>《法律声明及隐私政策》</a>
+				</div>
+				<button onclick="nextAction()" class="login-nexbt">下一步</button>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			//			下一步
+			function nextAction() {
+				mui.openWindow({
+					url: "../pushs/loginpsw.html",
+					id: "pasword",
+					extras: {
+						phoneN: document.getElementById("phonenumber").value
+					},
+				});
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/myInitialize.css" />
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<a class=" mui-icon  mui-pull-right nav-r" onclick="moshiAction()">模式</a>
+			<h1 class="mui-title">乐道</h1>
+		</header>
+		<div class="mui-content">
+			<!--头部黑色块   s-->
+			<div class="main-head">
+
+				<div class="fl">
+					<span>15:18</span>
+					<span class="main-head-l">周一2018-03-06</span>
+				</div>
+				<div class="fr">
+					<span>在线5小时</span>
+				</div>
+			</div>
+			<!--头部黑色块   e-->
+			<!--头部白色块   s-->
+			<div class="main-head-white">
+				<div class="fl">
+					<span><a class="color-r">0</a>单</span>
+					<span>今日接单</span>
+				</div>
+				<div class="fr">
+					<span><a class="color-r">0</a>元</span>
+					<span>今日收入</span>
+				</div>
+			</div>
+			<!--头部白色块   e-->
+			<div class="head-usicon" id="iconActin"><img src="../image/ic_user.png" /> </div>
+			<!--列表--s---->
+			<div class="main-listdiv">
+				<ul>
+					<li>
+						<div class="main-listdiv-icon fl">
+							<img src="../image/ic_user_item.png" />
+							<span>乘客昵称</span>
+						</div>
+						<div class="main-listdiv-top">
+							<div class="fl">
+								<p><span class="b-green">实时</span>当前订单</p>
+							</div>
+							<div class="fr">
+								<p>去往乘客上车点<i class="mui-icon mui-icon-arrowright"></i></p>
+							</div>
+						</div>
+						<div class="main-listdiv-bottom fl">
+							<p><i class="iconfont icon-point" style="color: rgb(0,193,140);"></i><span>南方消防电力大厦</span></p>
+							<p><i class="iconfont icon-point" style="color: rgb(200,22,29);"></i><span>佛山市汽车城</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="main-listdiv-icon fl">
+							<img src="../image/ic_user_item.png" />
+							<span>乘客昵称</span>
+						</div>
+						<div class="main-listdiv-top">
+							<div class="fl">
+								<p><span class="b-gray">实时</span>当前订单</p>
+							</div>
+							<div class="fr">
+								<p><span class="b-border color-g">距离</span><span class="color-r">3.8km</span></p>
+							</div>
+						</div>
+						<div class="main-listdiv-bottom fl">
+							<p><i class="iconfont icon-point" style="color: rgb(0,193,140);"></i><span>南方消防电力大厦</span></p>
+							<p><i class="iconfont icon-point" style="color: rgb(200,22,29);"></i><span>佛山市汽车城</span></p>
+						</div>
+						<button class="li-jiedan">接单</button>
+					</li>
+				</ul>
+			</div>
+			<!--列表--e---->
+			<button class="jieDan" id="main-jiedan">点击接单</button>
+
+			<script src="../js/mui.min.js"></script>
+			<script type="text/javascript" src="../js/myjs.js"></script>
+			<script type="text/javascript">
+				mui.init()
+				setNav();
+				//点击头像
+				$("#iconActin").click(function() {
+					openNewWindow("../personalCenter/userCenter2.html", "userCenter2", {});
+				});
+				//点击模式
+				function moshiAction() {
+					openNewWindow("../pushs/moshi.html", "register", {});
+				}
+				//点击接单
+				$("#main-jiedan").click(function() {
+					openNewWindow("../XingCheng/jieDan.html", "register", {});
+				});
+			</script>
+	</body>
+
+</html>

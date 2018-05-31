@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body style="background-color: white;">
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<!--<h1 class="mui-title"></h1>-->
+		</header>
+		<div class="mui-content">
+			<div class="login">
+				<img src="../image/ic_login_password.png" />
+				<h1>设置登录密码</h1>
+				<div class="login-pswdiv">
+					<input type="password" placeholder="请输入8-16位密码" id="setpsw" />
+					<i class="iconfont icon-icon-nosee" id="psw-see"></i>
+				</div>
+				<p style="width: 85%;margin-left: 7.5%; color: gray;text-align: left;">设置8-16位密码，必须包含“数字、字母、符号”其中两种，不能包含手机号、空格</p>
+				<button onclick="nextAction()" class="login-nexbt">确认</button>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			//密码框
+			var str = "password";
+			$("#psw-see").click(function() {
+				str = str === "text" ? "password" : "text";
+				$("#setpsw").attr('type', str);
+				$("#psw-see").attr("class", $("#psw-see").attr("class") === "iconfont icon-icon-see" ? "iconfont icon-icon-nosee" : "iconfont icon-icon-see");
+			});
+
+			//			确认
+			function nextAction() {
+				mui.openWindow({
+					url: "../pushs/registerClass.html",
+					id: "registerClass",
+					extras: {
+						//						phoneN:"13516645183"
+					},
+				});
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>上传资料</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">上传资料</h1>
+		</header>
+		<div class="mui-content">
+			<div class="uploadData-div" id="">
+				<ul>
+					<li class="uploadData-car" id="sf-z">
+						<p>身份证</p>
+						<div class="fl">
+							<img src="../image/upload_img.png" id="car-z" onclick="phtotoGet(this.id)" />
+							<span>申请人身份证正面</span>
+						</div>
+						<div class="fr">
+							<img src="../image/upload_img.png" id="car-f" onclick="phtotoGet(this.id)" />
+							<span>申请人身份证反面</span>
+						</div>
+					</li>
+					<li class="uploadData-car">
+						<p>行驶证</p>
+						<div class="fl">
+							<img src="../image/upload_img.png" id="travel-z" onclick="phtotoGet(this.id)" />
+							<span>申请人车辆行驶证正面</span>
+						</div>
+						<div class="fr">
+							<img src="../image/upload_img.png" id="travel-f" onclick="phtotoGet(this.id)" />
+							<span>申请人车辆行驶证反面</span>
+						</div>
+					</li>
+					<li class="uploadData-car" id="j-z">
+						<p>驾驶证</p>
+						<div class="fl">
+							<img src="../image/upload_img.png" id="driv-z" onclick="phtotoGet(this.id)" />
+							<span>申请人车辆驾驶证正面</span>
+						</div>
+						<div class="fr">
+							<img src="../image/upload_img.png" id="driv-f" onclick="phtotoGet(this.id)" />
+							<span>申请人车辆驾驶证反面</span>
+						</div>
+					</li>
+					<li class="uploadData-car" id="r-c">
+						<p>人车合照</p>
+						<div class="man-che">
+							<img src="../image/upload_img.png" id="driv-rc" onclick="phtotoGet(this.id)" />
+							<span>驾驶人与驾驶车辆合影</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<button class="saveBt">提交</button>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			mui.plusReady(function() {
+				var obj = plus.webview.currentWebview();
+				//如果是网约车
+				if(obj.pageType == "typ1") {
+					$("#r-c").hide();
+				} else {
+					$("#sf-z").hide();
+					$("#j-z").hide();
+				}
+			})
+
+			function phtotoGet(id) {
+				plus.nativeUI.actionSheet({
+						cancel: "取消",
+						buttons: [{
+								title: "拍照"
+							},
+							{
+								title: "从相册中选择"
+							}
+						]
+					},
+					function(e) {
+						//1 是拍照  2 从相册中选择
+						switch(e.index) {
+							case 1:
+								appendByCamera(id);
+								break;
+							case 2:
+								appendByGallery(id);
+								break;
+						}
+					});
+			}
+
+			// 拍照添加文件
+			function appendByCamera(id) {
+				plus.camera.getCamera().captureImage(function(e) {
+					//                  console.log("e is" +  e);
+					plus.io.resolveLocalFileSystemURL(e, function(entry) {
+						var path = entry.toLocalURL();
+						//                      var indexa = liIndex()
+						console.log(id);
+						//把照片赋值给
+						$("#" + id).attr("src", path);
+					}, function(e) {
+						mui.toast("读取拍照文件错误：" + e.message);
+					});
+
+				});
+			}
+			// 从相册添加文件
+			function appendByGallery(id) {
+				plus.gallery.pick(function(path) {
+					$("#" + id).attr("src", path);
+				});
+			}
+		</script>
+	</body>
+
+</html>

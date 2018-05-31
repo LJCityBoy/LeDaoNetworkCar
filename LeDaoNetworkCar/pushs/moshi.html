@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">模式设置</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="moshi">
+				<!--订单类型-->
+				<div class="moshi-typ">
+					<p class="moshi-p">订单类型</p>
+					<ul>
+						<li class="b-border">
+							实时
+						</li>
+						<li class="b-border">
+							预约
+						</li>
+						<li class="b-border">
+							全部
+						</li>
+					</ul>
+				</div>
+				<!--设置区域-->
+				<div class="moshi-area">
+					<p class="moshi-p">接单区域</p>
+					<div>
+						<select name="selctArea">
+							<option value="">佛山市-全区</option>
+							<option value="">佛山市-禅城区</option>
+							<option value="">佛山市-南海区</option>
+							<option value="">佛山市-顺德区</option>
+							<option value="">佛山市-三水区</option>
+							<option value="">佛山市-高明区</option>
+						</select>
+					</div>
+				</div>
+				<div class="moshi-time">
+					<p class="moshi-p">设置预约时间</p>
+					<div>
+						<input type="date" value="" style="float: left;" />
+						<span>至</span>
+						<input type="date" style="float: right;" />
+					</div>
+
+				</div>
+
+			</div>
+			<button class="saveBt">保存设置</button>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+		</script>
+	</body>
+
+</html>

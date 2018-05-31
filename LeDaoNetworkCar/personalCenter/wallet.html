@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">钱包</h1>
+		</header>
+		<div class="mui-content">
+			<div class="wallet-top">
+				<span class="fl">余额（元）</span>
+				<h1>100.0元</h1>
+			</div>
+			<div class="wallet-cent">
+				提现<s class="fr"></s>
+			</div>
+			<div class="wallet-bottom">
+				<ul>
+					<li style="border-bottom: 0.4px solid gray;">余额明细</li>
+					<li>
+						<div class="fl wallet-bottom-li-div">
+							<p>车费</p>
+							<span>2018-03-15 11:13</span>
+						</div>
+						<p class="fr">
+							+20.0元
+						</p>
+
+					</li>
+					<li>
+						<div class="fl wallet-bottom-li-div">
+							<p>提现</p>
+							<span>2018-03-15 11:13</span>
+						</div>
+						<p class="fr">
+							-1000.0元
+						</p>
+
+					</li>
+					<li>
+						<button>加载更多</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+		</script>
+	</body>
+
+</html>

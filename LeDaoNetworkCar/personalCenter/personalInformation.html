@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人消息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">个人消息</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="personal-box">
+		    	 <ul>
+		                <li style="margin-bottom: 10px; border: 0;" id="upLoadIcon">
+		                	<s class="fl personal-box-icon"></s>
+		                    <p style="margin-left: 85px;">上传头像</p>
+		                    <s class="fr personal-box-r"></s>
+		                </li>
+		                 <li>
+		                   <span>车牌号码</span>
+		                   <p>粤E88888</p>
+		                </li>
+		                 <li>
+		                	<span>司机姓名</span>
+		                	<p>刘新海</p>
+		                </li>
+		                <li style=" border: 0;">
+		                   <span> 公司名称</span>
+		                   <p>中开智能信息有限公司</p>
+		                </li>
+		            </ul>
+		    </div>
+		       
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			$("#upLoadIcon").click(function(){
+				alert("上传头像功能暂未开放");
+			});
+		</script>
+	</body>
+
+</html>

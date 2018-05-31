@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>取消订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">取消成功</h1>
+		</header>
+		<div class="mui-content">
+			<div class="cancelOrder">
+				<div class="cancelOrder-top">
+					<h1>您为什么取消？</h1>
+					<span>请告诉我们，我们继续完善</span>
+				</div>
+				<div class="cancelOrder-conten">
+
+					<ul>
+						<li>
+							乘客态度恶劣
+							<input type="checkbox" class="fr" />
+						</li>
+						<li>
+							绕路/堵车，不想前往
+							<input type="checkbox" class="fr" />
+						</li>
+						<li>
+							平台派单太远
+							<input type="checkbox" class="fr" />
+						</li>
+						<li>
+							司机以各种原因不来接我
+							<input type="checkbox" class="fr" />
+						</li>
+						<li>
+							乘客迟到
+							<input type="checkbox" class="fr" />
+						</li>
+						<li>
+							联系不上乘客
+							<input type="checkbox" class="fr" />
+						</li>
+					</ul>
+				</div>
+				<div class="cancelOrder-foot">
+					<button>点击获取更多原因</button>
+				</div>
+
+			</div>
+			<div class="cancelOrder-bottom">
+				<button id="cancelOrder-TiJiao">提交</button>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+		</script>
+	</body>
+
+</html>

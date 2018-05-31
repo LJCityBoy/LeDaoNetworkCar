@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>客服</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title">联系客服</h1>
+		</header>
+		<div class="mui-content">
+			<div class="customerService-content">
+				<ul>
+					<li>
+						乘客表示已出发出行
+						<s class="fr"></s>
+					</li>
+					<li>
+						我什么时候取消有责
+						<s class="fr"></s>
+					</li>
+					<li>
+						我什么时候取消要付取消费
+						<s class="fr"></s>
+					</li>
+					<li style="border: none;">
+						每天取消次数上限
+						<s class="fr"></s>
+					</li>
+				</ul>
+				<div class="customerService-foot">
+					<button id="kefu-online">在线客服</button>
+				</div>
+			</div>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			$("#kefu-online").click(function() {
+				mui.toast("抱歉，暂无在线客服");
+			});
+		</script>
+	</body>
+
+</html>

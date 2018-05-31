@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important; background-color: rgb(74,76,91) !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l-2"></a>
+			<a class="mui-icon  mui-pull-right nav-r-set" id="set-Action"></a>
+		</header>
+		<div class="mui-content">
+
+			<!--//头部-->
+			<div class="usercenter-top">
+				<div class="usercenter-top-icon" id="icon-action">
+					<s class="usercenter-top-icon-1"></s><s class="usercenter-top-icon-2"></s>
+				</div>
+				<div class="usercenter-top-dan">
+					12单
+					<span>本月完成订单</span>
+				</div>
+			</div>
+			<div class="usercenter-content">
+
+				<div class="usercenter-content-l fl" id="usercenter-qianbao">
+					<s></s>
+					<span>我的钱包</span>
+				</div>
+				<div class="usercenter-content2-r fr" id="message-center">
+					<s></s>
+					<span>系统通知</span>
+				</div>
+			</div>
+			<div class="usercenter-bottom">
+
+				<ul>
+
+					<li>
+						<div class="usercenter-bottom-li-l fl">
+							<s></s> 乘客昵称
+						</div>
+						<div class="usercenter-bottom-li-c fl">
+							<span>3月15日 周四 10:18</span>
+							<p><i class="iconfont icon-point color-gr"></i> 祖庙地铁站</p>
+							<p><i class="iconfont icon-point color-r"></i> 佛山市汽车站</p>
+						</div>
+						<div class="usercenter-bottom-li-r fr">
+							<span class="usercenter-bottom-li-r-top color-r">进行中</span>
+							<span class="usercenter-bottom-li-r-ttom"></span>
+						</div>
+					</li>
+				<li>
+
+					<div class="usercenter-bottom-li-l fl">
+						<s></s> 乘客昵称
+					</div>
+					<div class="usercenter-bottom-li-c fl">
+						<span>3月15日 周四 10:18</span>
+						<p><i class="iconfont icon-point color-gr"></i> 祖庙地铁站</p>
+						<p><i class="iconfont icon-point color-r"></i> 佛山市汽车站</p>
+					</div>
+					<div class="usercenter-bottom-li-r fr">
+						<span class="usercenter-bottom-li-r-top">已完成</span>
+						<span class="usercenter-bottom-li-r-ttom">20元</span>
+					</div>
+				</li>
+				<li>
+
+					<div class="usercenter-bottom-li-l fl">
+						<s></s> 乘客昵称
+					</div>
+					<div class="usercenter-bottom-li-c fl">
+						<span>3月15日 周四 10:18</span>
+						<p><i class="iconfont icon-point color-gr"></i> 祖庙地铁站</p>
+						<p><i class="iconfont icon-point color-r"></i> 佛山市汽车站</p>
+					</div>
+					<div class="usercenter-bottom-li-r fr">
+						<span class="usercenter-bottom-li-r-top">已完成</span>
+						<span class="usercenter-bottom-li-r-ttom">现金</span>
+					</div>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			//钱包
+			$("#usercenter-qianbao").click(function() {
+				openNewWindow("../personalCenter/wallet.html","wallet",{});
+			});
+			//系统通知中心
+			$("#message-center").click(function() {
+				openNewWindow("../personalCenter/messageCenter.html","messageCenter",{});
+			});
+			//点击头像
+			$("#icon-action").click(function (){
+				openNewWindow("../personalCenter/personalInformation.html","personalInformation",{});
+			});
+			//点击设置按钮
+			$("#set-Action").click(function(){
+				openNewWindow("../personalCenter/set.html","set",{});
+			});
+			//行程详情
+			$('ul li').click(function (){
+//				alert($(this).index());
+				openNewWindow("../personalCenter/routeDetails.html","routeDetails",{"indext":$(this).index()});
+			});
+		</script>
+	</body>
+
+</html>

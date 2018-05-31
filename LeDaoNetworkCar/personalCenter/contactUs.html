@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myInitialize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<script src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none !important;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left nav-l"></a>
+			<h1 class="mui-title" id="dan-title">联系我们</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="contactUs-ul">
+				<li class="set-mar-b">
+					客服电话
+					<s class="fr"></s>
+					<a id="callme" >13516645183</a>
+				</li>
+				<li class="set-line-b">
+					微信公众号
+					<a>乐道出行</a>
+				</li>
+				<li>
+					联系地址
+					<a>佛山市禅城区轻工三路南方消防电力大厦9楼</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/myjs.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			setNav();
+			$("#callme").click(function(){
+				plus.device.dial(13516645183,false);
+			});
+		</script>
+	</body>
+
+</html>
